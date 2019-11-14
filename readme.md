@@ -56,3 +56,11 @@ To get the **client** set up, follow these steps (in the client directory):
 2. npm start
 
 Note: The client is listening to localhost port 3000, while the server is listening to port 9000.
+
+## Authentication
+
+The authentication that is in this code base is simple in this form. The only two routes that are not protected are the "login" route and the get all users route. Any access to products is tied behind having an authenticated token available on the api calls. Once you login as a user through the button click, you can then view products tied to users.
+
+In regards to seeing who is making a request, I have the name of the "authed" user logging out when api calls are made. This is all done through a JSON web token that gets set when you auth in as a user.
+
+It's important to note, if you are going to try and make api calls to the server through either postman or curl commands, you must hit the auth route first to get the token, then use it in your request header with the key 'x-auth-token'. The return from the initial auth route will give you this token as a string.
