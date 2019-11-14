@@ -36,7 +36,7 @@ CREATE ROLE local_user WITH LOGIN PASSWORD 'secretpassword'
 ```
 CREATE DATABASE `Pumpjacks`;
 ```
-7. Now that we have the database, we need to seed the database. This code base uses Sequelize to do this. First line is to install Sequelize if you do not have it (make sure you are in the ***server*** directory if you need to do this).
+7. Now that we have the database, we need to seed the database. This code base uses Sequelize to do this. First line is to install Sequelize if you do not have it (make sure you are in the ***server*** directory for these last steps).
 ```
 npm install sequelize
 ```
