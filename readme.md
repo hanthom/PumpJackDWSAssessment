@@ -3,6 +3,8 @@
 To run this code locally, you will need two terminals open, one for the at the **server** and the other at the **client**.
 This is all based on the assumption that nodejs is installed on the machine this will run on.
 
+## Server
+
 To get the **server** set up, follow these steps (in the api directory):
 1. npm install
 2. npm start
@@ -47,6 +49,7 @@ sequelize db:migrate
 sequelize db:seed:all
 ```
 
+## Client
 
 To get the **client** set up, follow these steps (in the client directory):
 1. npm install
